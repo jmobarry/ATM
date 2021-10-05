@@ -1,0 +1,62 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>ATM Machine</title>
+  <!-- Don't use this in production: -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <!-- ----------------- Bootstrap header START ----------------- -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <style>
+    
+    .card{
+        border-style:solid;
+        background-color: rgb(185, 180, 180);
+        text-align: center;
+        font-size: medium;
+        
+    }
+
+    #button {
+      background-color: rgb(42, 196, 42);
+      border: 6px solid rgb(146, 146, 29);
+      border-radius: 10px;
+      width: 150px;
+      text-align: center;
+      color:black;
+    }
+
+    #picture{
+        border-style: solid;
+    }
+
+  </style>
+</head>
+
+<body>
+ 
+  <div class="card" style="width: 25rem;">
+    <img class="card-img-top" id ="picture" src="bank.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h3 class="card-title">Online ATM</h5>
+    
+      <div id="root"></div>
+
+      <button id="button"href="https://nrlfcu.org/information/contact-us/" class="btn btn-primary">Contact-Us</button>
+    </div>
+  </div>
+
+
+
+  <!-- We will put our React component inside this div. -->
+ 
+  <!-- Load React. -->
+  <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
+  <!-- Load our React component. -->
+
+  <script src="account1.jsx" defer type="text/babel"></script>
+</body>
+
+</html>
